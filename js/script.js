@@ -15,12 +15,23 @@ const app = new Vue(
             ]            
         },
 
+        mounted() {
+            setInterval(() => {
+        
+              if(this.counter == this.images.length - 1){
+                this.counter = 0;
+                } else{
+                this.counter++;
+                }
+            }, 3000);
+        },
+
         methods:{
 
             //*manda avanti la foto al click e comincia da capo alla fine
 
             nextPhoto(){
-                
+
                 //! CON TERNARIA
 
                 // (this.counter == this.images.length - 1) ? this.counter = 0 : this.counter++;
@@ -50,8 +61,29 @@ const app = new Vue(
                 }else{
                     this.counter--;
                 }
-            }
+            },
 
+            changeImgWithClick(index){
+
+                this.counter = index;
+
+            }
         }
     }    
 );
+
+
+
+
+
+
+mounted: {
+    setInterval(() => {
+      this.counter = this.counter + 1;
+
+      if (this.currentSliderIndex > 4) {
+        clearInterval();
+        this.counter = 0;
+      }
+    }, 3000);
+  }

@@ -45,7 +45,7 @@
 
         <section class="miniatures">
             <div v-for="(img, index) in images" class="mini_box_img">
-                <img :class="index == counter ? 'active' : '' " :src="img" alt="">
+                <img @click="changeImgWithClick(index)" :class="index == counter ? 'active' : '' " :src="img" alt="">
             </div>
 
         </section>

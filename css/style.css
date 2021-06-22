@@ -92,6 +92,7 @@ body{
 .mini_box_img img{
     height: 100%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 
 }
 
