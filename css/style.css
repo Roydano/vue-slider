@@ -74,6 +74,7 @@ body{
 
 .miniatures{
     display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -82,7 +83,7 @@ body{
     max-width: 70px;
     width: 70px;
     background-color: red;
-    margin: 0 10px;
+    margin: 0 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 
 }
