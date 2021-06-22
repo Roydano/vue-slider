@@ -11,7 +11,7 @@
 
 body{
     background-color: rgb(221, 221, 221);
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -56,6 +56,8 @@ body{
 
 .slide_show img{
     width: 100%;
+    max-height: 400px;
+    object-fit: cover;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
     
 }
@@ -82,15 +84,15 @@ body{
     height: 50px;
     max-width: 70px;
     width: 70px;
-    background-color: red;
     margin: 0 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 
 }
 
 
 .mini_box_img img{
     height: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+
 }
 
 
