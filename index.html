@@ -31,13 +31,13 @@
 
             <!-- start img container -->
             <div class="box_img">
-                <img src="img/dbz.jpg" alt="dbz">
+                <img :src="images[counter]" alt="">
             </div>
             <!-- end img container -->
 
             <!-- start button right -->
             <div class="btn_right">
-                <i class="fas fa-chevron-right"></i>
+                <i  @click="nextPhoto"  class="fas fa-chevron-right"></i>
             </div>
             <!-- end button right -->
 
@@ -45,7 +45,7 @@
 
         <section class="miniatures">
             <div class="mini_box_img">
-                <img src="img/dbz.jpg" alt="dbz">
+                <img src="" alt="">
             </div>
 
         </section>
