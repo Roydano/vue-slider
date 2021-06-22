@@ -74,6 +74,7 @@ body{
 
 .miniatures{
     display: flex;
+    margin-top: 20px;
 }
 
 .mini_box_img{
